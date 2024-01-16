@@ -4,6 +4,14 @@
 
 #include <log.h>
 
+void f(){
+  int i = 0;
+  MPM_ASSERT(i > 0, "i has to be bigger than zero!");
+}
+void g(){
+  f();
+}
+
 int main(){
-  spdlog::info("Hello World!");
+  g();
 }
