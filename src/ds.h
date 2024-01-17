@@ -76,6 +76,7 @@ public:
 private:
   int m_count;
   std::unordered_map<std::string, std::unique_ptr<DataArrayBase>> m_data;
+
 };
 
 #endif   // HYBRIDMPM_DS_H
