@@ -1,8 +1,12 @@
-file( GLOB SOURCE_FILES *.cpp *.h )
+file(GLOB SOURCE_FILES
+        *.cpp *.h
+        datastructure/*.cpp datastructure/*.h
+        util/*.cpp util/*.h
+)
 
 find_package(Eigen3 REQUIRED)
 
-#========================Mpm Dynamic Library============================
+#========================MPM Dynamic Library============================
 add_library(mpm SHARED ${SOURCE_FILES})
 target_link_libraries(mpm Eigen3::Eigen)
 target_include_directories(mpm

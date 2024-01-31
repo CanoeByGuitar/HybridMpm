@@ -7,7 +7,7 @@ Language: Cpp
 BasedOnStyle: LLVM
 
 # 访问说明符(public、private等)的偏移
-AccessModifierOffset: -2
+AccessModifierOffset: -4
 
 # 左括号(左圆括号、左尖括号、左方括号)后的对齐: Align, DontAlign, AlwaysBreak(总是在左括号后换行)
 AlignAfterOpenBracket: Align
@@ -148,10 +148,10 @@ CompactNamespaces: false
 ConstructorInitializerAllOnOneLineOrOnePerLine: false
 
 # 构造函数的初始化列表的缩进宽度
-ConstructorInitializerIndentWidth:  2
+ConstructorInitializerIndentWidth:  4
 
 # 延续的行的缩进宽度
-ContinuationIndentWidth: 2
+ContinuationIndentWidth: 4
 
 # 去除C++11的列表初始化的大括号{后和}前的空格
 Cpp11BracedListStyle: true
@@ -188,7 +188,7 @@ IndentCaseLabels: false
 IndentPPDirectives: AfterHash
 
 # 缩进宽度
-IndentWidth: 2
+IndentWidth: 4
 
 # 函数返回类型换行时，缩进函数声明或函数定义的函数名
 IndentWrappedFunctionNames: false
@@ -209,7 +209,7 @@ MaxEmptyLinesToKeep: 10
 # NamespaceIndentation: Inner
 
 # 使用ObjC块时缩进宽度
-ObjCBlockIndentWidth: 2
+ObjCBlockIndentWidth: 4
 
 # 在ObjC的@property后添加一个空格
 ObjCSpaceAfterProperty: false
@@ -245,7 +245,7 @@ PointerAlignment: Left
 ReflowComments: true
 
 # 允许排序#include
-SortIncludes: true
+SortIncludes: false
 
 # 允许排序 using 声明顺序
 SortUsingDeclarations: false
@@ -303,7 +303,7 @@ SpacesInSquareBrackets: false
 Standard: Cpp11
 
 # tab宽度
-TabWidth: 2
+TabWidth: 4
 
 # 使用tab字符: Never, ForIndentation, ForContinuationAndIndentation, Always
 UseTab: Never
