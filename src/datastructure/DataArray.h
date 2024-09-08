@@ -21,7 +21,7 @@ namespace DATA {
         This is an array of data with any type. E.g., for positions.
         The array stores contiguous data for the entities in the ranges
         Continuing the example if the array is [1, 2, 3, 4, 5]
-        then the entries and correspoding values are as follows
+        then the entries and corresponding values are as follows
         |Entry |   ValueId |   Value |
         |  0   |     0     |     1   |
         |  1   |     1     |     2   |
@@ -48,7 +48,7 @@ public:
     DataArray(const std::string& name, const DisjointRanges& ranges, std::vector<Type>&& array)
         : DataArrayBase(name, ranges)
         , array(std::move(array)) {
-        assert(ranges.Length() == (int)array.size());
+        assert(ranges.Length() == (int)this->array.size());
     }
 
     ~DataArray() override {}

@@ -52,9 +52,6 @@ public:
 
     DataManager(const DataManager&) = delete;
 
-    template<typename Type, typename... Types>
-    DataManager(const DataArray<Type>& a, const DataArray<Types>&... b)
-        : DataManager(b...) {}
 
     virtual ~DataManager() {}
 

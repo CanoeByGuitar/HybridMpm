@@ -115,6 +115,7 @@ public:
         for(const auto& range: mRanges){
             ret += (range.ToString() + " ");
         }
+        return ret;
     }
 
 public:
